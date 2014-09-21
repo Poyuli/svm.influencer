@@ -8,8 +8,8 @@ from grid import *
 from svmutil import *
 
 # Initialization
-file_path = "/Users/BradLi/Documents/libsvm-3.18/python"
-file_name = "train.csv"
+file_path = "Specify the file path here"
+file_name = "Specify the file name here"
 feat_list = [1,3,4,5,9,12,14,15,16,20]
 scale_factor = "unsigned"
 
