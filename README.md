@@ -1,8 +1,7 @@
 svm
 ===
 
-Tools for LIBSVM in Python.
-There are I/O processing part, feature engineering part, and training part.
+Tools for LIBSVM in Python, including the I/O processing part, feature engineering part, and training part.
 
 For I/O precessing fileproc.py, there is a CSV file reader which alignes data with the LIBSVM format. In addition, it writes data into a txt file.
 
