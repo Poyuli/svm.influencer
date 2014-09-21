@@ -44,10 +44,7 @@ ytrain, xtrain = svm_read_problem("scaled_data.txt")
 
 
 # Find optimal g (RBF kernel parameter) and c (regularization parameter) with coarse and fine grid search
-#rate, param = find_parameters("scaled_data.txt","-log2g -5,15,2 -log2c 3,-15,-2")
-param = {}
-param["c"] = 8
-param["g"] = 8
+rate, param = find_parameters("scaled_data.txt","-log2g -5,15,2 -log2c 3,-15,-2")
 c = math.log(param["c"], 2) - 1
 g = math.log(param["g"], 2) - 1
 rate, param = find_parameters("scaled_data.txt","-log2g " + str(c) + "," + str(c+2) + ",0.25 -log2c " + str(g+2) + "," + str(g) + ",-0.25")
